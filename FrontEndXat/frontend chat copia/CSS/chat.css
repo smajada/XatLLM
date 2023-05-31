@@ -91,3 +91,16 @@ h1 {
 #correo{
   font-size: x-large;
 }
+
+.input-field input,
+select,
+option {
+    appearance: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 0 15px;
+}
