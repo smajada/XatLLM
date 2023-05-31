@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/victorbonninpalou/Documents/eclipse/XatDAW/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2020592147.index
+1874193064.index
+1648654143.index
+2877848532.index
+978572545.index
+2271883574.index

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Login Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <header>Login</header>
+
+        <div class="form">
+            <div class="field" id="email-field">
+                <div class="input-field">
+                    <input class="email" type="email" name="mail" id="mail" placeholder="Enter your email" required>
+                </div>
+                <span class="error email-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter a valid email</p>
+                </span>
+            </div>
+            <div class="field" id="pass-field">
+                <div class="input-field">
+                    <input class="password" type="password" name="pass" id="pass" placeholder="Enter your password" required>
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error password-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter at least 8 characters with a number, symbol, and a capital letter</p>
+                </span>
+            </div>
+            <div class="input-field button">
+                <input type="submit" value="Send" id="submit" onclick="enviar()">
+            </div>
+            <div id="resultat"></div>
+        </div>
+    </div>
+
+    <script src="JS/login.js"></script>
+</body>
+</html>

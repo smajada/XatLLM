@@ -1,0 +1,93 @@
+/* Importar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root {
+  --main-grad-color: linear-gradient(to left, #37051f, #600531, #8d033e, #bc0447, #eb124b);
+  --bg-color: #eb124b;
+  --placeholder-color: #333;
+  --white: #ffff;
+  --main-btn-color: #600531;
+  --hover-btn-color: #bc0447;
+  --border-color: #919191;
+  --error-color: #d93025;
+}
+  
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  background-image: var(--main-grad-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.chat-config {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.chat-container {
+  border: 1px solid black;
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.message-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+h1 {
+  color: var(--placeholder-color);
+  font-size: xx-large;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#chat-user{
+  height: auto;
+  width: 50%;
+  text-align: left;
+}
+
+#chat-friend{
+  height: auto;
+  width: 50%;
+  text-align: right;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+}
+
+#correo{
+  font-size: x-large;
+}

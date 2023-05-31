@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/chat.css">
+    <script src="JS/chat.js" defer></script>
+    <title>Chat</title>
+</head>
+
+<body onload="getFriends(); getMessage(); mostrarMail()">
+    <button onclick="logOut()">Logout</button>
+    <div class="respuesta" id="respuesta">
+
+    </div>
+    <div class="container">
+        <div class="titulo">
+            <h1 id="titulo"></h1>
+            <h1 id="correo"></h1>
+        </div>
+
+
+        <div class="chat-config">
+            <div class="add-friend">
+                <input type="text" name="addFriend" id="addFriend" placeholder="Add a friend">
+                <button onclick="addFriend(); getFriends() ">Send</button>
+            </div>
+            <div class="list">
+                <select name="showFriends" id="showFriends">
+                    <option value="" disabled selected hidden>Choose a friend</option>
+                </select>
+            </div>
+        </div>
+        <div class="chat-body">
+            <div class="chat-container">
+                <div id="chat-user"></div>
+                <div id="chat-friend"></div>
+            </div>
+            <div class="message-container">
+                <input type="text" name="message" id="message" placeholder="Write a message">
+                <button type="submit" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

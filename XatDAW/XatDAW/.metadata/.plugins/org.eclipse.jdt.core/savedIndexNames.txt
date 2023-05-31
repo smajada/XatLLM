@@ -1,0 +1,7 @@
+INDEX VERSION 1.132+/Users/victorbonninpalou/Documents/eclipse/XatDAW/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+3939774360.index
+556027530.index
+4122468371.index
+1755739113.index
+1874193064.index

@@ -1,0 +1,174 @@
+/* Importar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root {
+    --main-grad-color: linear-gradient(to left, #37051f, #600531, #8d033e, #bc0447, #eb124b);
+    ;
+    --bg-color: #eb124b;
+    --placeholder-color: #333;
+    --white: #ffff;
+    --main-btn-color: #600531;
+    --hover-btn-color: #bc0447;
+    --border-color: #919191;
+    --error-color: #d93025;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    background-image: var(--main-grad-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--white);
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.popup {
+    color: var(--bg-color);
+    text-shadow: 4px 5px 2px var(--main-btn-color);
+    font-size: 57px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.container header {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--placeholder-color);
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .field {
+    margin-bottom: 20px;
+}
+
+.form .input-field {
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+.input-field input,
+select,
+option {
+    appearance: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.invalid input {
+    border-color: var(--error-color);
+}
+
+.input-field .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--border-color);
+    cursor: pointer;
+    padding: 3px;
+
+}
+
+.field .error {
+    display: flex;
+    align-items: center;
+    color: var(--error-color);
+    margin-top: 3px;
+    font-size: 13px;
+    display: none;
+}
+
+.invalid .error {
+    display: flex;
+}
+
+.error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+.create-password .error {
+    align-items: flex-start;
+}
+
+.create-password .error-icon {
+    margin-top: 4px;
+}
+
+select {
+    padding-right: 15px;
+    background-image: url('../img/down-arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+    background-size: 15px;
+    cursor: pointer;
+}
+
+.button {
+    margin: 25px 0 6px;
+}
+
+.button input {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--main-btn-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: var(--hover-btn-color);
+}
+
+.conditions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    user-select: none;
+}
+
+.conditions label {
+    font-size: 13px;
+}

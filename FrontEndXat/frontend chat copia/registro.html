@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/registro.js" defer></script>
+    <title>Sign up</title>
+</head>
+
+
+<body>
+    <!-- <div class="title">
+            <h1>Your adventure begins</h1>
+            <h1 class="popup">HERE</h1>
+        </div> -->
+    <div class="container">
+        <header>Signup</header>
+
+        <div class="form">
+            <div class="field nickname-field">
+                <div class="input-field">
+                    <input class="nickname" type="text" name="user" id="user" placeholder="Enter your nickname"
+                        required>
+                </div>
+                <span class="error email-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error-text">Please enter a valid nickname</p>
+                </span>
+            </div>
+            <div class="field email-field" id="email-field">
+                <div class="input-field">
+                    <input class="email" type="email" name="mail" id="mail" placeholder="Enter your email" required>
+                </div>
+                <span class="error email-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error-text">Please enter a valid email</p>
+                </span>
+            </div>
+            <div class="field create-password" id="pass-field">
+                <div class="input-field ">
+                    <input class="password" type="password" name="pass" id="pass" placeholder="Create password"
+                        required>
+                    <i class='bx bx-hide show-hide'></i>
+                </div>
+                <span class="error password-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error-text">Please enter atleast 8 character with a number and a capital letter</p>
+                </span>
+            </div>
+            <div class="field confirm-password" id="cpassword-field">
+                <div class="input-field ">
+                    <input type="password" name="cpass" id="cpass" placeholder="Confirm password" class="cpassword"
+                        required>
+                    <i class='bx bx-hide show-hide'></i>
+                </div>
+                <span class="error password-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error-text">Password don't match</p>
+                </span>
+            </div>
+            <div class="field country-code">
+                <div class="input-field">
+                    <select name="codeCountry" id="codeCountry" required>
+                        <option value="" disabled selected hidden>Choose a nationality</option>
+                    </select>
+                </div>
+                <div class="field conditions">
+                    <input type="checkbox" id="conditions" name="conditions" value="conditions" required />
+                    <label for="conditios">I agree to the terms and conditions as set out by the user agreement.</label>
+                </div>
+            </div>
+            <div class="registered">
+                <p>Already registered?</p>
+                <a href="login.html">Click here</a>
+            </div>
+            <div class="input-field button">
+                <input type="submit" value="Submit now" id="submit">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
