@@ -172,3 +172,13 @@ select {
 .conditions label {
     font-size: 13px;
 }
+
+.registered{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.registered a{
+    
+}

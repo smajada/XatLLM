@@ -11,10 +11,13 @@
 </head>
 
 <body onload="getFriends(); getMessage(); mostrarMail()">
-    <button onclick="logOut()">Logout</button>
-    <div class="respuesta" id="respuesta">
-
+    <div class="input-field button bt-logout">
+        <input type="submit" value="Logout" id="submit" onclick="logOut()">
     </div>
+
+    <div id="respContainer">
+    </div>
+
     <div class="container">
         <div class="titulo">
             <h1 id="titulo"></h1>
@@ -27,8 +30,9 @@
                 <div class="input-field">
                     <input type="text" name="addFriend" id="addFriend" placeholder="Add a friend">
                 </div>
-
-                <button onclick="addFriend(); getFriends() ">Send</button>
+                <div class="input-field button">
+                    <input type="submit" value="Add" id="submit" onclick="addFriend(); getFriends()">
+                </div>
             </div>
             <div class="list">
                 <select name="showFriends" id="showFriends">
@@ -37,15 +41,15 @@
             </div>
         </div>
         <div class="chat-body">
-            <div class="chat-container">
-                <div id="chat-user"></div>
-                <div id="chat-friend"></div>
-            </div>
-            <div class="message-container">
-                <input type="text" name="message" id="message" placeholder="Write a message">
-                <button type="submit" onclick="sendMessage()">Send</button>
+
+        </div>
+        <div class="message-container input-field">
+            <input type="text" name="message" id="message" placeholder="Write a message">
+            <div class="input-field button">
+                <input type="submit" value="Send" id="submit" onclick="sendMessage()">
             </div>
         </div>
+
     </div>
 
 </body>

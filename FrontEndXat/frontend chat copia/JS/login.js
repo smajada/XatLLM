@@ -39,3 +39,4 @@ eyeIcons.forEach((eyeIcon) => {
 		}
 	});
 });
+

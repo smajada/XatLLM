@@ -35,7 +35,7 @@ eyeIcons.forEach((eyeIcon) => {
 
 // Validacion de la contrasena
 function createPass() {
-	const passPattern  = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$");
+	const passPattern = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*d).{8,}$");
 	if (!passInput.value.match(passPattern)) {
 		return passField.classList.add("invalid");
 	} else if (passInput.value === "" || passInput.value.match(passPattern)) {
@@ -80,7 +80,7 @@ function registerUser(user, pass, mail, codeCountry) {
 
 	http.send(params);
 
-	window.location.replace("login.html")
+	window.location.replace("login.html");
 }
 
 // Obtener lista de países
@@ -94,7 +94,7 @@ function getCountries() {
 		if (http.readyState == 4 && http.status == 200) {
 			var data = JSON.parse(http.responseText);
 			console.log("Country list:", data);
-			
+
 			// Llenar el select de países en el formulario
 			var countrySelect = document.getElementById("codeCountry");
 			data.forEach(function (country) {
@@ -119,13 +119,24 @@ window.addEventListener("load", function (e) {
 	getCountries();
 
 	// Llamada a registerUser cuando el usuario presiona el botón de registro
-    const btnRegister = document.getElementById("submit");
+	const btnRegister = document.getElementById("submit");
 	btnRegister.addEventListener("click", function (e) {
 		e.preventDefault();
 		var user = document.getElementById("user").value;
 		var pass = document.getElementById("pass").value;
 		var mail = document.getElementById("mail").value;
 		var codeCountry = document.getElementById("codeCountry").value;
+
+		// Validar que los campos no estén en blanco
+		if (
+			user.trim() === "" ||
+			pass.trim() === "" ||
+			mail.trim() === "" ||
+			codeCountry.trim() === ""
+		) {
+			alert("Por favor, complete todos los campos.");
+			return;
+		}
 
 		registerUser(user, pass, mail, codeCountry);
 	});
