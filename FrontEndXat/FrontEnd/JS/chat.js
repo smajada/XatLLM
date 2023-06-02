@@ -167,7 +167,7 @@ function sendMessage() {
 
 	http.onreadystatechange = function () {
 		if (http.readyState == 4 && http.status == 200) {
-			console.log("Mensaje enviado exitosamente");
+			console.log("Message sent successfully");
 		}
 	};
 
@@ -184,7 +184,7 @@ function mostrarMail() {
 	var correoGuardado = sessionStorage.getItem("mail");
 
 	// Actualizar el contenido del título y el correo electrónico
-	tituloElemento.textContent = "Bienvenido, ";
+	tituloElemento.textContent = "Welcome back, ";
 	correoElemento.textContent = correoGuardado;
 }
 
