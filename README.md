@@ -52,6 +52,6 @@ This project does not have a specific licence and its use is restricted to educa
 We hope you enjoy using this interactive chat! If you have any suggestions or improvements, feel free to share them with us.
 
 ## Screenshots
-![Login image](/FrontEndXat/FrontEnd/img/Chat.png)
+![Login image](/FrontEndXat/FrontEnd/img/Login.png)
 ![Register image](/FrontEndXat/FrontEnd/img/Registro.png)
 ![Chat image](/FrontEndXat/FrontEnd/img/Chat.png)
