@@ -9,19 +9,21 @@ The project is organised in three main folders:
 
 - CSS: This folder contains all the CSS files used to style the chat and its elements.
 
-- JavaScript: Here you will find the JavaScript files that control the logic and interaction of the chat. These files are responsible for sending and receiving messages, updating the user interface and managing the selection of people for the conversation.
+- JS: Here you will find the JavaScript files that control the logic and interaction of the chat. These files are responsible for sending and receiving messages, updating the user interface and managing the selection of people for the conversation.
 
-- Images: This folder stores all the images used in the project, such as user avatars or chat-related icons.
+- Img: This folder stores all the images used in the project, such as user avatars or chat-related icons.
 
 
 ## Main functionalities
 The chat developed in this project has the following main functionalities:
 
-1. **User selection:** By means of a selector, the user can choose with whom he/she wants to start a conversation.
+1. **User registration and login:** Users can create a chat account via a registration form. In addition, they can log in with their existing credentials. This allows them to have a unique identity in the chat and to access previous conversations.
+   
+2. **User selection:** By means of a selector, the user can choose with whom he/she wants to start a conversation.
 
-2. **Sending and receiving messages:** Users can send and receive messages in real time. Messages are displayed on the user interface in an orderly and clear manner.
+3. **Sending and receiving messages:** Users can send and receive messages in real time. Messages are displayed on the user interface in an orderly and clear manner.
 
-3. **Customised style:** The chat has an attractive and customisable interface thanks to the CSS files included in the project. It is possible to modify the style to adapt it to specific preferences or needs.
+4. **Customised style:** The chat has an attractive and customisable interface thanks to the CSS files included in the project. It is possible to modify the style to adapt it to specific preferences or needs.
 
 ## Backend and database
 
@@ -34,7 +36,7 @@ The code related to the backend and database is embedded in the corresponding Ja
 To run the project, follow the steps below:
 
  - Clone this repository in your local environment.
- - Open the index.html file in your preferred web browser.
+ - Open the `index.html` file in your preferred web browser.
  - Register as a new user or log in with your existing credentials.
  - Select a user you want to chat with.
  - Start sending and receiving chat messages!
