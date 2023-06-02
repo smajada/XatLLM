@@ -50,3 +50,8 @@ This project has been developed as part of an academic exercise and no external 
 This project does not have a specific licence and its use is restricted to educational purposes. 
 
 We hope you enjoy using this interactive chat! If you have any suggestions or improvements, feel free to share them with us.
+
+## Screenshots
+![Login image](/FrontEndXat/FrontEnd/img/Chat.png)
+![Register image](/FrontEndXat/FrontEnd/img/Registro.png)
+![Chat image](/FrontEndXat/FrontEnd/img/Chat.png)
